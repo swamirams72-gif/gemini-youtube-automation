@@ -138,7 +138,7 @@ def generate_curriculum(previous_titles=None):
         prompt = f"""
         You are an expert AI educator. Generate a curriculum for a YouTube series called 'AI for Pharma by {Swamirams}'.
         {history}
-        The style must be: 'Assume the viewer is a beginner or non-technical person starting their journey into AI as a developer.
+        The style must be: 'Assume the viewer is a pharma professional, biotech researcher, or lab scientist who wants to use AI in their work..
         Use simple real-world analogies, relatable examples, and then connect to technical concepts.'
 
         The curriculum must guide a developer from absolute beginner to advanced AI, covering foundations like Generative AI, LLMs, Vector Databases, and Agentic AI...
@@ -164,8 +164,8 @@ def generate_lesson_content(lesson_title):
         client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
         prompt = f"""
         You are creating a lesson for the 'AI for Pharma by {Swamirams}' series. The topic is '{lesson_title}'.
-        The style is: Assume the viewer is a beginner developer or non-tech person who wants to learn AI from scratch.
-        Use analogies and clear, simple language. Each concept must be explained from a developer's perspective, assuming no prior AI or ML knowledge.
+        The style is: Assume the viewer is a pharma professional, biotech researcher, or lab scientist who wants to use AI in their work.
+        Use analogies and clear, simple language. Each concept must be explained from a pharma professional's perspective, assuming no prior AI or ML knowledge.
 
         Generate a JSON response with three keys:
         1. "long_form_slides": A list of 7 to 8 slide objects for a longer, more detailed main video. Each object needs a "title" and "content" key.
