@@ -119,7 +119,7 @@ def generate_curriculum(previous_titles=None):
         prompt = f"""
         You are an expert AI educator. Generate a curriculum for a YouTube series called 'AI for Pharma by {YOUR_NAME}'.
         {history}
-        The style must be: 'Assume the viewer is a pharma professional, biotech researcher, or lab scientist who wants to use AI in their work..
+        The style must be: 'Assume the viewer is a pharma professional, biotech researcher, or lab scientist who wants to use AI in their work.
         Use simple real-world analogies, relatable examples, and then connect to technical concepts.'
 
         The curriculum must teach pharma professionals how to use AI tools like ChatGPT, Claude, and Gemini for drug discovery, literature reviews, lab data analysis, research workflows, and biotech applications. Cover topics like: AI-assisted PubMed searches, prompt engineering for scientists, analyzing BLAST results with AI, writing lab reports faster, understanding clinical trial data, AI for regulatory affairs, and building research automation tools.
