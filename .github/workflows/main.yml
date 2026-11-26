@@ -2,7 +2,8 @@ name: Autonomous AI Course Generator
 
 on:
   schedule:
-    - cron: '0 7 * * *' # 12:30 PM IST daily
+       - cron: '30 3 * * 1'   # Monday 9:00 AM IST
+       - cron: '30 12 * * 4'  # Thursday 6:00 PM IST
   workflow_dispatch:
 
 # A run takes far longer than the gap between a manual dispatch and the daily
