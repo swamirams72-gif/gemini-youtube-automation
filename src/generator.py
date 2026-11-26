@@ -143,7 +143,7 @@ def generate_lesson_content(lesson_title):
     try:
         client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
         prompt = f"""
-        You are creating a lesson for the 'AI for Pharma by {Swamirams}' series. The topic is '{lesson_title}'.
+        You are creating a lesson for the 'AI for Pharma by {YOUR_NAME}' series. The topic is '{lesson_title}'.
         The style is: Assume the viewer is a pharma professional, biotech researcher, or lab scientist who wants to use AI in their work.
         Use analogies and clear, simple language. Each concept must be explained from a pharma professional's perspective, assuming no prior AI or ML knowledge.
 
