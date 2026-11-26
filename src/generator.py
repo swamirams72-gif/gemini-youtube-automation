@@ -141,8 +141,7 @@ def generate_curriculum(previous_titles=None):
         The style must be: 'Assume the viewer is a pharma professional, biotech researcher, or lab scientist who wants to use AI in their work..
         Use simple real-world analogies, relatable examples, and then connect to technical concepts.'
 
-        The curriculum must guide a developer from absolute beginner to advanced AI, covering foundations like Generative AI, LLMs, Vector Databases, and Agentic AI...
-        ...then continue into deep AI topics like Reinforcement Learning, Transformers internals, multi-agent systems, tool use, LangGraph, AI architecture, and more.
+        The curriculum must teach pharma professionals how to use AI tools like ChatGPT, Claude, and Gemini for drug discovery, literature reviews, lab data analysis, research workflows, and biotech applications... ...then continue into deep AI topics like Reinforcement Learning, Transformers internals, multi-agent systems, tool use, LangGraph, AI architecture, and more.
 
         Respond with ONLY a valid JSON object. The object must contain a key "lessons" which is a list of 20 lesson objects.
         Each lesson object must have these keys: "chapter", "part", "title", "status" (defaulted to "pending"), and "youtube_id" (defaulted to null).
