@@ -59,9 +59,6 @@ def get_pexels_image(query, video_type):
         print(f"❌ General error fetching Unsplash image for query '{query}': {e}")
     return None
 
-    orientation = 'landscape' if video_type == 'long' else 'portrait'
-    try:
-        headers = {"Authorization": pexels_api_key}
         params = {"query": f"abstract {query}", "per_page": 1, "orientation": orientation}
         response = requests.get("https://api.pexels.com/v1/search", headers=headers, params=params, timeout=15)
         response.raise_for_status()
