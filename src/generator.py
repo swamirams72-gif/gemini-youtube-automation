@@ -21,7 +21,7 @@ ASSETS_PATH = Path("assets")
 FONT_FILE = ASSETS_PATH / "fonts/arial.ttf"
 BACKGROUND_MUSIC_PATH = ASSETS_PATH / "music/bg_music.mp3"
 FALLBACK_THUMBNAIL_FONT = ImageFont.load_default()
-YOUR_NAME = "Chaitanya"
+YOUR_NAME = "Swamirams"
 
 # Google's TTS endpoint throttles bursts from shared CI IPs. When it does, it answers
 # 200 OK with no audio stream, which gTTS surfaces as "Probable cause: Unknown".
@@ -36,11 +36,28 @@ if os.name == 'posix':
 
 
 def get_pexels_image(query, video_type):
-    """Searches for a relevant image on Pexels and returns the image object."""
-    pexels_api_key = os.getenv("PEXELS_API_KEY")
-    if not pexels_api_key:
-        print("⚠️ PEXELS_API_KEY not found. Using solid color background.")
+    """Searches for a relevant image on Unsplash and returns the image object."""
+    unsplash_access_key = os.getenv("UNSPLASH_ACCESS_KEY")
+    if not unsplash_access_key:
+        print("⚠️ UNSPLASH_ACCESS_KEY not found. Using solid color background.")
         return None
+    orientation = 'landscape' if video_type == 'long' else 'portrait'
+    try:
+        headers = {"Authorization": f"Client-ID {unsplash_access_key}"}
+        params = {"query": f"abstract {query}", "per_page": 1, "orientation": orientation}
+        response = requests.get("https://api.unsplash.com/search/photos", headers=headers, params=params, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+        if data.get('results'):
+            image_url = data['results'][0]['urls']['regular']
+            image_response = requests.get(image_url, timeout=15)
+            image_response.raise_for_status()
+            return Image.open(BytesIO(image_response.content)).convert("RGBA")
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Network error fetching Unsplash image for query '{query}': {e}")
+    except Exception as e:
+        print(f"❌ General error fetching Unsplash image for query '{query}': {e}")
+    return None
 
     orientation = 'landscape' if video_type == 'long' else 'portrait'
     try:
