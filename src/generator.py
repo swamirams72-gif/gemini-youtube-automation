@@ -136,7 +136,7 @@ def generate_curriculum(previous_titles=None):
             history = f"The following lessons have already been created:\n{formatted}\n\nPlease continue from where this series left off.\n"
 
         prompt = f"""
-        You are an expert AI educator. Generate a curriculum for a YouTube series called 'AI for Developers by {YOUR_NAME}'.
+        You are an expert AI educator. Generate a curriculum for a YouTube series called 'AI for Pharma by {Swamirams}'.
         {history}
         The style must be: 'Assume the viewer is a beginner or non-technical person starting their journey into AI as a developer.
         Use simple real-world analogies, relatable examples, and then connect to technical concepts.'
