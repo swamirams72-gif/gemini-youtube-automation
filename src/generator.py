@@ -59,22 +59,6 @@ def get_pexels_image(query, video_type):
         print(f"❌ General error fetching Unsplash image for query '{query}': {e}")
     return None
 
-        params = {"query": f"abstract {query}", "per_page": 1, "orientation": orientation}
-        response = requests.get("https://api.pexels.com/v1/search", headers=headers, params=params, timeout=15)
-        response.raise_for_status()
-        data = response.json()
-        if data.get('photos'):
-            image_url = data['photos'][0]['src']['large2x']
-            image_response = requests.get(image_url, timeout=15)
-            image_response.raise_for_status()
-            return Image.open(BytesIO(image_response.content)).convert("RGBA")
-    except requests.exceptions.RequestException as e:
-        print(f"❌ Network error fetching Pexels image for query '{query}': {e}")
-    except Exception as e:
-        print(f"❌ General error fetching Pexels image for query '{query}': {e}")
-    return None
-
-
 def _throttle_tts():
     """Spaces out TTS requests so a burst doesn't trip Google's rate limiter."""
     global _last_tts_request
