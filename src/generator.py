@@ -149,7 +149,7 @@ def generate_lesson_content(lesson_title):
         Generate a JSON response with three keys:
         1. "long_form_slides": A list of 7 to 8 slide objects for a longer, more detailed main video. Each object needs a "title" and "content" key.
         2. "short_form_highlight": A single, punchy, 1-2 sentence summary for a YouTube Short.
-        3. "hashtags": A string of 5-7 relevant, space-separated hashtags for this lesson (e.g., "#GenerativeAI #LLM #Developer","#NeuralNetworks #BeginnerAI #AIforDevelopers").
+        3. "hashtags": A string of 5-7 relevant, space-separated hashtags for this lesson (e.g.,"#AIforPharma #DrugDiscovery #LabScience","#PharmaResearch #ChatGPT #BioTech").
 
         Return only valid JSON.
         """
