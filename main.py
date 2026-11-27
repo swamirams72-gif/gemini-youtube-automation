@@ -108,7 +108,7 @@ def produce_lesson_videos(lesson):
     short_slide_dir = OUTPUT_DIR / f"slides_short_{unique_id}"
     short_slide_content = {
         "title": "Quick Tip!",
-        "content": f"{lesson_content['short_form_highlight']}\n\n#AI for developers by chaitanya"
+        "content": f"{lesson_content['short_form_highlight']}\n\n#AI for Pharma by Swami Rams"
     }
     short_slide_path = generate_visuals(
         output_dir=short_slide_dir,
@@ -130,8 +130,8 @@ def produce_lesson_videos(lesson):
 
     print("\n📤 Uploading to YouTube...")
     hashtags = lesson_content.get("hashtags", "#AI #Developer #LearnAI")
-    long_desc = f"Part of the 'AI for Developers' series by {YOUR_NAME}.\n\nToday's Lesson: {lesson['title']}\n\n{hashtags}"
-    long_tags = "AI, Artificial Intelligence, Developer, Programming, Tutorial, " + lesson['title'].replace(" ", ", ")
+    long_desc = f"Part of the 'AI for Pharma' series by {YOUR_NAME}.\n\nToday's Lesson: {lesson['title']}\n\n{hashtags}"
+    long_tags = "AI, Pharma, Drug Discovery, Lab Science, Microbiology,Biotech,, " + lesson['title'].replace(" ", ", ")
 
     long_video_id = upload_to_youtube(
         long_video_path,
@@ -156,7 +156,7 @@ def produce_lesson_videos(lesson):
             short_video_path,
             short_title.strip(),
             short_desc,
-            "AI,Shorts,TechTip",
+            "AIforPharma,Shorts,PharmaResearch",
             short_thumb_path
         )
         return long_video_id
