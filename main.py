@@ -130,7 +130,7 @@ def produce_lesson_videos(lesson):
 
     print("\n📤 Uploading to YouTube...")
     hashtags = lesson_content.get("hashtags", "#AIforPharma #DrugDiscovery #PharmaResearch")
-    long_desc = f"Part of the 'AI for Pharma' series by {YOUR_NAME}.\n\nToday's Lesson: {lesson['title']}\n\n{hashtags}"
+    long_desc = f"Part of the 'AI for Pharma' series by {YOUR_NAME}.\n\nToday's topic: {lesson['title']}\n\n{hashtags}"
     long_tags = "AI, Pharma, Drug Discovery, Lab Science, Microbiology,Biotech,, " + lesson['title'].replace(" ", ", ")
 
     long_video_id = upload_to_youtube(
