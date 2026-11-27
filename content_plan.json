@@ -1,1 +1,144 @@
-{}
+{
+  "lessons": [
+    {
+      "chapter": 1,
+      "part": 1,
+      "title": "The Scientist\u2019s Digital Lab Partner: Introduction to LLMs",
+      "status": "complete",
+      "youtube_id": "1bgV3vZ8GqU"
+    },
+    {
+      "chapter": 1,
+      "part": 2,
+      "title": "Prompt Engineering: How to Speak 'Science' to ChatGPT and Claude",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 2,
+      "part": 3,
+      "title": "Beyond Google: AI-Assisted PubMed and Literature Mining",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 2,
+      "part": 4,
+      "title": "Synthesizing 50 Papers into One Executive Summary",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 3,
+      "part": 5,
+      "title": "AI for BLAST and Sequence Analysis: Decoding the Genomic Noise",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 3,
+      "part": 6,
+      "title": "Protein Folding and Structure Prediction: An AI Primer",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 4,
+      "part": 7,
+      "title": "From Bench to Brain: Analyzing Raw Lab Data with AI",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 4,
+      "part": 8,
+      "title": "Visualizing Experiments: Using Code Interpreters for Lab Plots",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 5,
+      "part": 9,
+      "title": "The Turbo-Charged Lab Notebook: Automating Documentation",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 5,
+      "part": 10,
+      "title": "Writing Faster: Drafting Manuscripts and Grant Proposals",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 6,
+      "part": 11,
+      "title": "Understanding Clinical Trial Data with AI Dashboards",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 6,
+      "part": 12,
+      "title": "Identifying Patient Subgroups in Clinical Data",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 7,
+      "part": 13,
+      "title": "AI in Regulatory Affairs: Speeding Up FDA Submission Summaries",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 7,
+      "part": 14,
+      "title": "Compliance and Quality Control: Spotting Anomalies with AI",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 8,
+      "part": 15,
+      "title": "Small Molecule Drug Discovery: AI as a Screening Tool",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 8,
+      "part": 16,
+      "title": "AI in Toxicity Prediction: Catching Failures Earlier",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 9,
+      "part": 17,
+      "title": "Building Your First Research Automation Workflow",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 9,
+      "part": 18,
+      "title": "Connecting Lab Instruments to AI via APIs",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 10,
+      "part": 19,
+      "title": "Data Privacy and Ethics in Pharma AI",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 10,
+      "part": 20,
+      "title": "The Future Lab: Scaling AI in Your Research Team",
+      "status": "pending",
+      "youtube_id": null
+    }
+  ]
+}
