@@ -148,7 +148,7 @@ def produce_lesson_videos(lesson):
         if not highlight:
             highlight = f"AI Quick Tip: {lesson['title']}"
         short_title = f"{highlight[:90].rstrip()} #Shorts"
-        # short_desc = f"Watch the full lesson with {YOUR_NAME} here: https://www.youtube.com/watch?v={long_video_id}\n\n#AI #Programming #Tech #Developer"
+        # short_desc = f"Watch the full lesson with {YOUR_NAME} here: https://www.youtube.com/watch?v={long_video_id}\n\n#AIforPharma #PharmaResearch #BioTech #DrugDiscovery"
         short_desc = (f"{lesson_content['short_form_highlight']}\n\n"
                       f"Watch the full lesson with {YOUR_NAME} here: https://www.youtube.com/watch?v={long_video_id}\n\n"
                       f"{hashtags}")
